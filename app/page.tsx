@@ -114,7 +114,7 @@ export default function Home() {
     }
   };
 
-  const content = homeContent[language];
+  const content = homeContent[language as keyof typeof homeContent];
 
   // Icon components
   const SearchIcon = () => (
